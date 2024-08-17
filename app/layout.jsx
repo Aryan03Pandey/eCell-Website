@@ -1,17 +1,23 @@
+import Nav from '@components/Navbar'
+import Provider from '@components/Provider'
 import '@styles/globals.css'
 
+//change the metadata of the application dynamically
 export const metadata = {
-    title: 'eCell NSUT',
-    description: 'Where innovation thrives'
+    title: "eCell NSUT",
+    description: "Where Innovation Thrives"
 }
 
-const RootLayout = ({ children }) => {
+const RootLayout = ({children}) => {
   return (
-    <html lang='en'>
+    <html>
         <body>
-            <main>
-                {children}
-            </main>
+            <Provider>
+                <main className='app'>
+                    <Nav />
+                    {children}
+                </main>
+            </Provider>
         </body>
     </html>
   )

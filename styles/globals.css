@@ -5,5 +5,7 @@
 @tailwind utilities;
 
 @layer components{
-    
+    .gradient{
+        @apply 
+    }
 }
