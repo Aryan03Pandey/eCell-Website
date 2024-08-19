@@ -1,0 +1,126 @@
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #000F30;
+    height: 100vh; /* Ensure the app covers the full viewport height */
+    width: 100%; /* Ensure the app covers the full width */
+  }
+  
+  .navbar {
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .navbarLogo {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-left: 0px;
+  }
+  
+  .logoImage {
+    height: 40px;
+    width: auto;
+    margin-right: 10px;
+  }
+  
+  .navbarLinks {
+    list-style: none;
+    display: flex;
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+  }
+  
+  .navbarLinks li {
+    margin-left: 0px;
+    margin-right: 60px;
+  }
+  
+  .navbarLinks li:last-child {
+    margin-left: auto;
+  }
+  
+  .navbarLinks li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  /* Main Content Styling */
+  .main {
+    text-align: center;
+    z-index: 2;
+    color: #fff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+  }
+  
+  .title {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  /* Gradient Overlay */
+  .gradientOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background: linear-gradient(180deg, rgba(0, 15, 48, 0.4) 0%, rgba(0, 48, 153, 0.4) 100%);
+    filter: blur(100px); /* Adjust blur if necessary */
+    z-index: 0;
+    opacity: 0.7;
+  }
+  
+  /* Pinkish Circles */
+  .pinkishCircle {
+    position: absolute;
+    width: 514px;
+    height: 435px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, rgba(255, 122, 0, 0) 0%, #FF58BF 100%);
+    filter: blur(120px); /* Increased blur for a softer effect */
+    z-index: 1;
+    opacity: 0.7;
+  }
+  
+  /* Positioning the circles */
+  .circleTopLeft {
+    top: -30px;
+    left: -33px;
+  }
+  
+  .circleBottomRight {
+    bottom: -10px;
+    right: -10px;
+  }
+  
