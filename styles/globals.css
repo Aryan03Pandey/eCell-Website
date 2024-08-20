@@ -5,7 +5,53 @@
 @tailwind utilities;
 
 @layer components{
-    .gradient{
-        @apply 
+
+    .about-us-transparent-bg{
+        background: rgba(101, 97, 165, 0.22);
+        backdrop-filter: blur(3.5px);
+        -webkit-backdrop-filter: blur(3.5px);
+        border: 1px solid rgba(101, 97, 165, 0.14);
+    }
+
+    body{
+        background: rgb(13,8,41);
+        background: linear-gradient(90deg, rgba(13,8,41,1) 0%, rgba(24,16,73,1) 11%, rgba(40,32,117,1) 29%, rgba(58,48,155,1) 52%, rgba(40,32,117,1) 80%, rgba(13,8,41,1) 100%);
+
+    }
+
+    .gradient-text {
+        font-size: 60px;
+        font-weight: bold;
+        background: rgb(140,1,250);
+        background: linear-gradient(90deg, rgba(140,1,250,1) 0%, rgba(25,251,155,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        /* text-fill-color: transparent; */
+        color: transparent;
+      }
+
+    .heading {
+        font-size: 60px;
+    }
+
+    .mainEventFrame{
+        width: 630px;
+        height: 330px;
+        position: relative;
+        margin: 50px auto;
+    }
+
+    .mainEventFrame::before{
+        content: "";
+        position: absolute;
+        border-radius: 10px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        clip-path: polygon(100% 0, 100% 71%, 73% 100%, 0 100%, 0 0);;
+        background-color: rgba(8,11,42,0.60);
+        z-index: 1;
     }
 }
