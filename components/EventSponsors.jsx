@@ -10,7 +10,7 @@ const EventSponsors = () => {
                 <div>
                     <h1 className="text-white text-[32px] text-center">Our Sponsors</h1>
 
-                    <p className="w-[60%] min-w-[500px] text-center mx-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, est!</p>
+                    <p className="w-[60%] min-w-[500px] text-center mx-auto">Meet the champions who drive our success and make it all possible.</p>
                 </div>
 
                 <div className="flex justify-between">

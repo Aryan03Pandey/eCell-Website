@@ -32,18 +32,12 @@ const EventHeroSection = () => {
                 <p>This edition of InnovateX, themed "AI and Sustainability" encapsulates a series of events on the path of Innovation for a Greener Future and Mitigating Environmental Impact.</p>
 
                 <div className="flex gap-3 items-center mt-3">
-                    <div className="text-black text-[20px] bg-white rounded-full w-fit px-4 py-2">Participate Now</div>
-
                     <Link
                         href="https://unstop.com/college-fests/innovatex24-ecell-nsut-262856"
                         target="_blank"
-                        className="bg-white rounded-full flex p-2 w-[40px] h-[40px] justify-center items-center"
+                        className="bg-white text-black text-[20px] rounded-full px-4 py-2 flex items-center cursor-pointer"
                     >
-                        <Image 
-                            src={arrow}
-                            height={12}
-                            width={12}
-                        />
+                        Participate Now
                     </Link>
                 </div>
             </div>

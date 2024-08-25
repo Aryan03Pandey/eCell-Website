@@ -21,9 +21,9 @@ const EventSubEvents = () => {
     <>
       <div className="font-inter py-[50px] w-full bg-cover bg-center bg-no-repeat">
           <div className="w-[80%] max-w-[1600px] flex flex-col mx-auto gap-8 transition-all duration-1000">
-              <h2 className="text-[32px] text-center font-bold">Events Under Event Name</h2>
+              <h2 className="text-[32px] text-center font-bold">Events Under InnovateX</h2>
 
-              <p className='text-[16px] text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique adipisci sequi quibusdam doloribus. Molestiae, nemo!</p>
+              <p className='text-[16px] text-center'>Discover a variety of engaging events at InnovateX, from case studies and hackathons to bidding challenges, all crafted to inspire and innovate.</p>
 
               <div className='flex justify-center'>
               <div className='grid grid-cols-3 gap-12 justify-center items-center mt-2'>

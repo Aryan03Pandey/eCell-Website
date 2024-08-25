@@ -40,17 +40,12 @@ const EventPopUp = ({event, showEvent, setShowEvent}) => {
                 <p className="text-[16px]">{desc}</p>
 
                 <div className="flex gap-3 items-center mt-3">
-                    <div className="text-black text-[20px] bg-white rounded-full w-fit px-4 py-2">Participate Now</div>
-
                     <Link
                         href={link}
-                        className="bg-white rounded-full flex p-2 w-[40px] h-[40px] justify-center items-center"
+                        className="bg-white text-black text-[20px] rounded-full px-4 py-2 flex items-center cursor-pointer"
                     >
-                        <Image 
-                            src={arrow}
-                            height={12}
-                            width={12}
-                        />
+                    <div className="text-black text-[20px] bg-white rounded-full w-fit px-4 py-2">Participate Now</div>
+
                     </Link>
                 </div>
             </div>

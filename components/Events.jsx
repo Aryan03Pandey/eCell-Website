@@ -7,25 +7,25 @@ import Link from "next/link"
 const events = [
     {
         name: 'eSummit',
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet sagittis elit vitae suscipit. Praesent vitae porta mi, ut ullamcorper urna. Vestibulum vulputate.',
+        desc: 'It is a premier entrepreneurship event that brings together innovators, industry leaders, investors  and aspiring entrepreneurs  to inspire, educate, and connect for a transformative experience',
         link: '/',
         color: '#1FCFF1'
     },
     {
         name: 'InnovateX',
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet sagittis elit vitae suscipit. Praesent vitae porta mi, ut ullamcorper urna. Vestibulum vulputate.',
+        desc: 'Innovatex merges  technology and entrepreneurship, and several events are conducted under the banner of InnovateX. Each event is designed to inspire students and make them realize the potential power of a raw idea holding the power to alter the futuristic dynamic of business and technology',
         link: '/events',
         color: 'yellow-600'
     },
     {
         name: 'Ideathon',
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet sagittis elit vitae suscipit. Praesent vitae porta mi, ut ullamcorper urna. Vestibulum vulputate.',
+        desc: 'It is a 48 hour brainstorming event that combines ideation and implementation. where participants generate and develop innovative solutions to real-world challenges, showcasing their creativity and problem-solving skills in a competitive and collaborative environment',
         link: '/',
         color: '#19FB9B'
     },
     {
         name: 'Consigliere',
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet sagittis elit vitae suscipit. Praesent vitae porta mi, ut ullamcorper urna. Vestibulum vulputate.',
+        desc: 'It is a case study-based competition, challenging not just your problem-solving abilities but also your creativity. It compels you to think outside the box by evaluating participants analytical and problem-solving skills in each round. ' , 
         link: '/',
         color: '#9945FF'
     },
@@ -40,7 +40,9 @@ const Events = () => {
             <div className="w-[40%]">
                 <div>
                     <h1 className="text-[64px]">Events</h1>
-                    <p className="text-[21px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, officia adipisci. Exercitationem aspernatur quibusdam numquam repudiandae earum consequatur ut modi.</p>
+                    <p className="text-[21px]">eCell’s events are where innovation comes to life. From hackathons to case studies, our events challenge you to push your limits and turn ideas into reality. Whether you're a budding entrepreneur or an experienced innovator, our events offer the perfect platform to connect, collaborate, and create. Join us to explore new opportunities and take your next big step.
+
+.</p>
                 </div>
 
                 <div>

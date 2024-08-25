@@ -10,7 +10,7 @@ const navLinks = [
     },
     {
         text: "Events",
-        link: "/"
+        link: "/events"
     },
     {
         text: "Gallery",

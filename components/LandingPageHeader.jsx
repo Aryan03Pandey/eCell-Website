@@ -13,7 +13,7 @@ const LandingPageHeader = () => {
             <Image src={logo} width={100} height={100} />
             <h1 className="title">Push Boundaries Beyond Your Limits</h1>
             <p className="description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet sagittis elit vitae suscipit. Praesent vitae porta mi, ut ullamcorper urna. Vestibulum vulputate maximus aliquam.
+            Unlock your potential, challenge the ordinary. Embrace the journey of innovation and create something extraordinary.
             </p>
         </div>
     </div>

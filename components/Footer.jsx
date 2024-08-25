@@ -23,7 +23,7 @@ const Footer = () => {
                             <h3 className="text-white font-bold capitalize mb-2">Navigate</h3>
                             <ul className="text-white font-light">
                                 <li><Link href="/">About Us</Link></li>
-                                <li><Link href="/">Events</Link></li>
+                                <li><Link href="/events">Events</Link></li>
                                 <li><Link href="/">Gallery</Link></li>
                             </ul>
                         </div>
@@ -40,9 +40,9 @@ const Footer = () => {
                         <div>
                             <h3 className="text-white font-bold capitalize mb-2">Socials</h3>
                             <ul className="text-white font-light">
-                                <li><Link href="/">LinkedIn</Link></li>
-                                <li><Link href="/">Instagram</Link></li>
-                                <li><Link href="/">Facebook</Link></li>
+                                <li><Link href="https://www.linkedin.com/company/ecell-nsut/">LinkedIn</Link></li>
+                                <li><Link href="https://www.instagram.com/ecell.nsut/?hl=en">Instagram</Link></li>
+                                <li><Link href="https://www.facebook.com/ecell.nsut/photos/?_rdr">Facebook</Link></li>
                             </ul>
                         </div>
                     </div>

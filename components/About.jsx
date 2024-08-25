@@ -3,7 +3,7 @@ import Link from "next/link"
 
 import rocket from "../public/assets/icons/rocket.svg"
 import bulb from "../public/assets/icons/bulb.svg"
-import ladySitting from "../public/assets/images/lady-sitting.png"
+import ladySitting from "../public/assets/images/Team.jpg"
 import arrow from "../public/assets/icons/arrow.svg"
 
 const About = () => {
@@ -17,7 +17,9 @@ const About = () => {
                     </div>
                     <div>
                         <p className="">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error neque maiores dicta odit et minus eveniet, quaerat quibusdam facere nam totam nostrum quod eos dolorum recusandae non!
+                        eCell is a vibrant community of innovators and entrepreneurs dedicated to transforming ideas into impactful realities. We provide a collaborative space, mentorship, and resources to empower individuals to push the boundaries of creativity and innovation. Our goal is to cultivate the next generation of leaders who are driven to make a difference. At eCell, we believe in the power of innovation to shape a better future.
+
+
                         </p>
                     </div>
                     <div className="flex gap-4 mt-4">
@@ -28,8 +30,8 @@ const About = () => {
                                 />
                             </div>
                             <div className="flex flex-col gap-2">
-                                <h2 className="text-[20px]">Lorem, ipsum.</h2>
-                                <p className="text-[14px]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, a.</p>
+                                <h2 className="text-[20px]">Mission</h2>
+                                <p className="text-[14px]">Empower individuals to turn their creative ideas into reality through innovation and collaboration.</p>
                             </div>
                         </div>
                         <div className="flex gap-2 justify-start">
@@ -39,44 +41,27 @@ const About = () => {
                                 />
                             </div>
                             <div className="flex flex-col gap-2">
-                                <h2 className="text-[20px]">Lorem, ipsum.</h2>
-                                <p className="text-[14px]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, a.</p>
+                                <h2 className="text-[20px]">Vision</h2>
+                                <p className="text-[14px]">To transform ideas into impactful solutions that drive positive change in society.</p>
                             </div>
                         </div>
                     </div>
                     <div className="flex mt-2 gap-2">
-                        <button className="bg-[#9C37FD] cursor-default rounded-full px-4 py-2 uppercase text-[16px] font-light">
-                            our team
-                        </button>
-
-                        <Link
-                            href="/"
-                            className="bg-white rounded-full flex p-2 w-[40px] h-[40px] justify-center items-center"
+                        <Link 
+                            href="/" 
+                            className="bg-[#9C37FD] rounded-full px-4 py-2 uppercase text-[16px] font-light flex justify-center items-center w-max cursor-pointer"
                         >
-                            <Image 
-                                src={arrow}
-                                height={12}
-                                width={12}
-                            />
+                            our team
                         </Link>
                     </div>
                 </div>
 
-                <div className="w-[40%] flex justify-end">
-                    <div className="flex flex-col items-center">
+                <div className="w-[50%] flex justify-end">
+                    <div className="absolute right-20">
                         <Image 
                             src={ladySitting}
-                            className="w-[320px]"
+                            className="w-[500px]"
                         />
-
-                        <div className="flex flex-col justify-center gap-3 items-center p-4 rounded-2xl bg-[#0A123E] absolute top-[270px] w-[250px] h-[150px]">
-                            <div className="flex flex-col gap-0 leading-4">
-                                <p className="text-[#2EA7FF] text-[12px]">Lorem ipsum dolor sit amet.</p>
-                                <h2 className="text-[18px]">Lorem, ipsum.</h2>
-                            </div>
-
-                            <p className="text-[12px] text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, a. Fugit, ea!</p>
-                        </div>
                     </div>
                 </div>
             </div>

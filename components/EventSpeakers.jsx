@@ -15,7 +15,7 @@ const EventSpeakers = () => {
           <div className="w-[80%] max-w-[1600px] flex  flex-col mx-auto gap-8 transition-all duration-1000">
               <h2 className="text-[32px] text-center font-bold">Past Speakers</h2>
 
-              <p className='text-[16px] text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique adipisci sequi quibusdam doloribus. Molestiae, nemo!</p>
+              <p className='text-[16px] text-center'>Learn from the thought leaders who have driven change and inspired countless journeys.</p>
 
             <div className='flex justify-center'>
                 <div className='grid grid-cols-4  gap-12 justify-center  items-center mt-2'>
