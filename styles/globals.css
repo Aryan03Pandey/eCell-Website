@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("../styles/timelines.css");
+@import url("../styles/timelineCard.css");
+
 
 @tailwind base;
 @tailwind components;
@@ -13,10 +16,14 @@
         border: 1px solid rgba(101, 97, 165, 0.14);
     }
 
-    body{
+    body, .eventPopUp{
         background: rgb(13,8,41);
         background: linear-gradient(90deg, rgba(13,8,41,1) 0%, rgba(24,16,73,1) 11%, rgba(40,32,117,1) 29%, rgba(58,48,155,1) 52%, rgba(40,32,117,1) 80%, rgba(13,8,41,1) 100%);
 
+    }
+
+    nav{
+        background-color: #000F30;
     }
 
     .gradient-text {
@@ -54,4 +61,201 @@
         background-color: rgba(8,11,42,0.60);
         z-index: 1;
     }
+
+    .eventCardFrame{
+        width: 384px;
+        height: 460px;
+        position: relative;
+        margin: 50px auto;
+    }
+
+    .eventCardFrame::before{
+        content: "";
+        position: absolute;
+        border-radius: 10px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* border: 1px solid; */
+        clip-path: polygon(100% 0, 100% 77%, 74% 100%, 0 100%, 0 0);
+        background-color: rgba(8,11,42,0.60);
+        /* border-color: #45CDFF; */
+        z-index: 1;
+    }
+
+
+    /* all images */
+    .banner-wrapper img {
+        max-width: 550px;
+        height: 20rem;
+        object-fit: cover;
+        padding: 0 10px;
+        /* cursor: pointer; */
+    }
+    
+    .banner-wrapper {
+        width: 100%;
+        height: 20rem;
+        overflow: hidden;
+    }
+    
+    .banner-wrapper .wrapper {
+        display: flex;
+    }
+    
+    .banner-wrapper .wrapper .images {
+        display: flex;
+        animation: swipe 3000 linear infinite;
+    }
+    
+    .banner-wrapper:hover .wrapper .images {
+        animation-play-state: paused;
+    }
+    
+    @keyframes swipe {
+        0% {
+        transform: translateX(0);
+        }
+    
+        100% {
+        transform: translateX(-100%);
+        }
+    }
+
+    @keyframes fadeIn {
+        0% {
+          opacity: 0;
+          transform: translate(-50%, -50%) scale(0.95);
+        }
+        100% {
+          opacity: 1;
+          transform: translate(-50%, -50%) scale(1);
+        }
+      }
+      
+      .popup {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        opacity: 0;
+        animation: fadeIn 0.5s forwards;
+      }
+
+    /* App container */
+    .App {
+        display: flex;
+        flex-direction: column; /* Ensures content stacks vertically */
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background-color: #000F30;
+        min-height: 100vh; /* Ensure the app covers the full viewport height */
+        width: 100%; /* Ensure the app covers the full width */
+        overflow: hidden; /* Allow content to overflow if necessary */
+    }
+
+    /* Main Content Styling */
+    .main {
+        text-align: center;
+        z-index: 4;
+        color: #fff;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding-top: 0px;
+        padding-bottom: 50px; /* Add padding to ensure the bottom content is visible */
+    }
+
+    .title {
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+
+    .description {
+        font-size: 18px;
+        max-width: 600px;
+        margin: 0 auto;
+        line-height: 1.6;
+    }
+
+    /* Gradient Overlay */
+    .gradientOverlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        background: linear-gradient(180deg, rgba(0, 15, 48, 0.4) 0%, rgba(0, 48, 153, 0.4) 100%);
+        filter: blur(100px); /* Adjust blur if necessary */
+        z-index: 0;
+        opacity: 0.7;
+    }
+    
+    /* Pinkish Circles */
+    .pinkishCircle {
+        position: absolute;
+        width: 514px;
+        height: 535px;
+        border-radius: 50%;
+        background: linear-gradient(180deg, rgba(255, 122, 0, 0) 0%, #FF58BF 100%);
+        filter: blur(120px); /* Increased blur for a softer effect */
+        z-index: 1;
+        opacity: 0.7;
+    }
+
+    /* Positioning the circles */
+    .circleTopLeft {
+        top: -30px;
+        left: -33px;
+    }
+
+    .circleBottomRight {
+        bottom: -10px;
+        right: -10px;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+      }
+      
+      /* Create four equal columns that sits next to each other */
+      .column {
+        flex: 33%;
+        max-width: 33%;
+        padding: 0 4px;
+      }
+      
+      .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+      }
+      
+      /* Responsive layout - makes a two column-layout instead of four columns */
+      @media screen and (max-width: 800px) {
+        .column {
+          flex: 50%;
+          max-width: 50%;
+        }
+      }
+      
+      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .column {
+          flex: 100%;
+          max-width: 100%;
+        }
+      }
 }

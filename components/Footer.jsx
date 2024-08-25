@@ -20,7 +20,16 @@ const Footer = () => {
 
                     <div className="text-[18px] flex gap-16">
                         <div>
-                            <h3 className="text-[rgb(140,1,250)]/40  uppercase">help</h3>
+                            <h3 className="text-white font-bold capitalize mb-2">Navigate</h3>
+                            <ul className="text-white font-light">
+                                <li><Link href="/">About Us</Link></li>
+                                <li><Link href="/">Events</Link></li>
+                                <li><Link href="/">Gallery</Link></li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h3 className="text-white font-bold capitalize mb-2">Reach Out</h3>
                             <ul className="text-white font-light">
                                 <li><Link href="/">Contact Us</Link></li>
                                 <li><Link href="/">Raise Issue</Link></li>
@@ -29,16 +38,7 @@ const Footer = () => {
                         </div>
 
                         <div>
-                            <h3 className="text-[rgb(140,1,250)]/40  uppercase">help</h3>
-                            <ul className="text-white font-light">
-                                <li><Link href="/">Contact Us</Link></li>
-                                <li><Link href="/">Raise Issue</Link></li>
-                                <li><Link href="/">FAQs</Link></li>
-                            </ul>
-                        </div>
-
-                        <div>
-                            <h3 className="text-[rgb(140,1,250)]/40  uppercase">help</h3>
+                            <h3 className="text-white font-bold capitalize mb-2">Socials</h3>
                             <ul className="text-white font-light">
                                 <li><Link href="/">LinkedIn</Link></li>
                                 <li><Link href="/">Instagram</Link></li>

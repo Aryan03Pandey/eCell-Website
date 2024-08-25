@@ -24,32 +24,32 @@ const navLinks = [
 
 const Nav = () => {
     return (
-      <nav className="bg-blue-700 text-white flex justify-between items-center py-3 px-8">
-        <div className="flex justify-center items-center w-fit gap-2">
+      <nav className="text-white  py-4">
+        <div className="w-[90%] max-w-[1600px] flex justify-between items-center mx-auto">
             <Link
                 href="/"
+                className="flex justify-center items-center w-fit gap-2 cursor-pointer"
             >
                 <Image 
                     src={logo}
-                    className="w-fit"
+                    width={40} height={40}
                 />
+                <h1 className="text-white font-bold">eCell NSUT</h1>
             </Link>
 
-            <h1 className="text-white font-bold">eCell NSUT</h1>
-        </div>
-
-        <div className="flex gap-3 font-bold">
-            {
-                navLinks.map((navLink, i) => {
-                    return <div>
-                        <Link
-                            href={navLink.link}
-                        >
-                            {navLink.text}
-                        </Link>
-                    </div>
-                })
-            }
+            <div className="flex gap-6 font-bold">
+                {
+                    navLinks.map((navLink, i) => {
+                        return <div>
+                            <Link
+                                href={navLink.link}
+                            >
+                                {navLink.text}
+                            </Link>
+                        </div>
+                    })
+                }
+            </div>
         </div>
       </nav>
     )

@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+
+    .timelineCardRight {
+        background: linear-gradient(transparent 0 0) padding-box, /*this is your grey background*/
+          linear-gradient(90deg, rgba(156,55,253,1) 0%,rgba(21,191,253,1) 7%, rgba(21,191,253,0) 50%) border-box;
+        padding: 2px;
+        border: 5px solid transparent;
+        border-radius: 12px;
+        width: 400px;
+        opacity: 0;
+      }
+
+    .timelineCardRightShow {
+        /* transform: translateX(0); */
+        opacity: 1;
+      }
+
+    .timelineCardLeft {
+        background: linear-gradient(transparent 0 0) padding-box, /*this is your grey background*/
+          linear-gradient(270deg, rgba(156,55,253,1) 0%,rgba(21,191,253,1) 7%, rgba(21,191,253,0) 50%) border-box;
+        padding: 2px;
+        border: 5px solid transparent;
+        border-radius: 12px;
+        display: inline-block;
+        width: 400px;   /* Set the width of the rectangle */
+        /* opacity: 0; */
+    }
+
+    .timelineCardLeftSlide {
+        transform: translateX(0);
+      }
+      
+}

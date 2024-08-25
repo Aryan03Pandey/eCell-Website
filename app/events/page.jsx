@@ -1,6 +1,9 @@
 import EventDesc from "@components/EventDesc"
 import EventHeroSection from "@components/EventHeroSection"
+import EventSpeakers from "@components/EventSpeakers"
+import EventSponsors from "@components/EventSponsors"
 import EventSubEvents from "@components/EventSubEvents"
+import EventTimeline from "@components/EventTimelines"
 
 const InnovateX = () => {
   return (
@@ -8,6 +11,9 @@ const InnovateX = () => {
         <EventHeroSection />
         <EventDesc />
         <EventSubEvents />
+        <EventTimeline />
+        <EventSpeakers />
+        <EventSponsors />
     </div>
   )
 }
