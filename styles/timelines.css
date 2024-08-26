@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+      
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .timeline {
+        height: 170px;
+        width: 5px;
+        background-color: #e5e5e5;
+      }
+      
+      .stub1 {
+        line-height: 300px;
+        font-size: 24px;
+        background-color: #eae4e4;
+        
+      }
+      
+
+      .circle {
+        width: 40px;
+        height: 40px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 50%;
+        background-color: #15BFFD;
+      }
+      
+      .circleWrapper {
+        position: relative;
+      }
+}
