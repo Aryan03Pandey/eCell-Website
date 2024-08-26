@@ -3,7 +3,7 @@ import Link from "next/link"
 
 import rocket from "../public/assets/icons/rocket.svg"
 import bulb from "../public/assets/icons/bulb.svg"
-import team from "../public/assets/images/Team.jpg"
+import team from "../public/assets/images/team.jpg"
 import arrow from "../public/assets/icons/arrow.svg"
 
 const About = () => {
