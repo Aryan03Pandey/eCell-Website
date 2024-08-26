@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="w-[80%] mx-auto max-w-[1600px]">
                 <div className="flex justify-between items-center py-[50px]">
                     <div className="flex flex-col gap-3">
-                        <h2 className="text-[36px] ">show us yours, we'll show you ours</h2>
+                        <h2 className="text-[36px] ">From Concept, to Impact, to Success</h2>
                         <div className="bg-white border-none outline-none rounded-lg px-3 py-2 w-fit flex items-center">
                             <input
                                 className="bg-white border-none outline-none rounded-lg px-3 py-2 text-black"
