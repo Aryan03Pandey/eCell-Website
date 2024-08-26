@@ -3,7 +3,10 @@ import EventHeroSection from "@components/EventHeroSection"
 import EventSpeakers from "@components/EventSpeakers"
 import EventSponsors from "@components/EventSponsors"
 import EventSubEvents from "@components/EventSubEvents"
-import EventTimeline from "@components/EventTimelines"
+// import EventTimeline from "@components/EventTimelines"
+import EventTimeline from "@components/EventTimeline"
+
+import "intersection-observer";
 
 const InnovateX = () => {
   return (
@@ -11,6 +14,7 @@ const InnovateX = () => {
         <EventHeroSection />
         <EventDesc />
         <EventSubEvents />
+        {/* <EventTimeline /> */}
         <EventTimeline />
         <EventSpeakers />
         {/* <EventSponsors /> */}
