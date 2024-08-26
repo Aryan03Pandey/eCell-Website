@@ -6,16 +6,16 @@ import Link from "next/link"
 
 const events = [
     {
-        name: 'eSummit',
-        desc: 'It is a premier entrepreneurship event that brings together innovators, industry leaders, investors  and aspiring entrepreneurs  to inspire, educate, and connect for a transformative experience',
-        link: '/',
-        color: '#1FCFF1'
-    },
-    {
         name: 'InnovateX',
         desc: 'Innovatex merges  technology and entrepreneurship, and several events are conducted under the banner of InnovateX. Each event is designed to inspire students and make them realize the potential power of a raw idea holding the power to alter the futuristic dynamic of business and technology',
         link: '/events',
         color: 'yellow-600'
+    },
+    {
+        name: 'eSummit',
+        desc: 'It is a premier entrepreneurship event that brings together innovators, industry leaders, investors  and aspiring entrepreneurs  to inspire, educate, and connect for a transformative experience',
+        link: '/',
+        color: '#1FCFF1'
     },
     {
         name: 'Ideathon',
@@ -35,7 +35,7 @@ const colors = ['#1FCFF1', "#FFD512", '#19FB9B', '#9945FF']
 
 const Events = () => {
   return (
-    <div className="text-white font-inter py-[60px] bg-[url('/assets/images/noise-2.png')] w-full bg-[length:120%] bg-center bg-no-repeat">
+    <div id="events" className="text-white font-inter py-[60px] bg-[url('/assets/images/noise-2.png')] w-full bg-[length:120%] bg-center bg-no-repeat">
         <div className="w-[80%] max-w-[1600px] flex mx-auto gap-6">
             <div className="w-[40%]">
                 <div>
@@ -58,8 +58,9 @@ const Events = () => {
                     events.map((event, i) => {
                         return (
                             <div key={i} 
-                                className="rounded-2xl bg-black/30 p-[24px] "
+                                className="rounded-2xl bg-black/30 p-[24px] relative content-container"
                             >
+                                {i>0 && <div className="coming-soon-overlay">Coming Soon</div>}
                                 <div className="flex gap-2 items-center">
                                     <div className={`bg-white w-[2px] h-[30px]`}></div>
                                     <h2 className="text-[36px]">{event.name}</h2>
@@ -70,7 +71,7 @@ const Events = () => {
                                 </div>
 
                                 <div
-                                    className="-mt-1 flex justify-end"
+                                    className="-mt-1 flex justify-end absolute bottom-4 right-4"
                                 >
                                     <Link
                                         href={event.link}

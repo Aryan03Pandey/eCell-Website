@@ -42,6 +42,7 @@ const EventPopUp = ({event, showEvent, setShowEvent}) => {
                 <div className="flex gap-3 items-center mt-3">
                     <Link
                         href={link}
+                        target="_blank"
                         className="bg-white text-black text-[20px] rounded-full px-4 py-2 flex items-center cursor-pointer"
                     >
                     <div className="text-black text-[20px] bg-white rounded-full w-fit px-4 py-2">Participate Now</div>

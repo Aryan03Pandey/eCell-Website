@@ -11,6 +11,7 @@ const EventDesc = () => {
 
             <Link
                 href="https://unstop.com/college-fests/innovatex24-ecell-nsut-262856"
+                target="_blank"
                 className="bg-[#15BFFD] text-[18px] rounded-full px-4 py-2 mt-2 w-fit"
             >
                 Participate Now

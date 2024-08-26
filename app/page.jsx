@@ -13,7 +13,7 @@ const Home = () => {
       <About />
       <Events />
       <Community />
-      <Collaborations />
+      {/* <Collaborations /> */}
       <Gallery images={images} speed={30000} />
     </div>
   )

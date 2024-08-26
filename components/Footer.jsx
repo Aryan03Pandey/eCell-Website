@@ -22,9 +22,9 @@ const Footer = () => {
                         <div>
                             <h3 className="text-white font-bold capitalize mb-2">Navigate</h3>
                             <ul className="text-white font-light">
-                                <li><Link href="/">About Us</Link></li>
-                                <li><Link href="/events">Events</Link></li>
-                                <li><Link href="/">Gallery</Link></li>
+                                <li><Link href="#about">About Us</Link></li>
+                                <li><Link href="#events">Events</Link></li>
+                                <li><Link href="#gallery">Gallery</Link></li>
                             </ul>
                         </div>
 

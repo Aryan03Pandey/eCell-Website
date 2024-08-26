@@ -13,7 +13,7 @@ const InnovateX = () => {
         <EventSubEvents />
         <EventTimeline />
         <EventSpeakers />
-        <EventSponsors />
+        {/* <EventSponsors /> */}
     </div>
   )
 }

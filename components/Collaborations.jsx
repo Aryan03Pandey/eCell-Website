@@ -3,7 +3,7 @@ import google from "../public/assets/images/google.png"
 import Image from "next/image"
 
 const Collaborations = () => {
-    return <section className="bg-[url('/assets/images/noise-2.png')] w-full bg-[length:120%] bg-center bg-no-repeat">
+    return <section id="collaborations" className="bg-[url('/assets/images/noise-2.png')] w-full bg-[length:120%] bg-center bg-no-repeat">
         <div className="font-inter py-[40px]">
             <div className="w-[80%] max-w-[1600px] flex flex-col mx-auto gap-12">
 

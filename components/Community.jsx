@@ -25,9 +25,9 @@ const Community = () => {
                     </div>
                     <div>
                         <div className="gradient-text">
-                            <Counter endVal={50} incVal={1} speed={80}  />
+                            <Counter endVal={30} incVal={1} speed={80}  />
                         </div>
-                        <p className="text-[16px] text-white uppercase">Instagram Followers</p>
+                        <p className="text-[16px] text-white uppercase">Startups</p>
                     </div>
                     <div>
                         <div className="gradient-text">

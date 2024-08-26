@@ -6,19 +6,19 @@ import Link from "next/link"
 const navLinks = [
     {
         text: "About Us",
-        link: "/"
+        link: "#about"
     },
     {
         text: "Events",
-        link: "/events"
+        link: "#events"
     },
     {
         text: "Gallery",
-        link: "/"
+        link: "#gallery"
     },
     {
         text: "Collaborations",
-        link: "/"
+        link: "#collaborations"
     }
 ]
 

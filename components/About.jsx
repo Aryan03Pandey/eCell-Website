@@ -3,12 +3,12 @@ import Link from "next/link"
 
 import rocket from "../public/assets/icons/rocket.svg"
 import bulb from "../public/assets/icons/bulb.svg"
-import ladySitting from "../public/assets/images/Team.jpg"
+import team from "../public/assets/images/Team.jpg"
 import arrow from "../public/assets/icons/arrow.svg"
 
 const About = () => {
   return (
-    <section className="bg-[url('/assets/images/noise-2.png')] w-full bg-[length:120%] bg-center bg-no-repeat">
+    <section id="about" className="bg-[url('/assets/images/noise-2.png')] w-full bg-[length:120%] bg-center bg-no-repeat">
         <div className="about-us-transparent-bg text-white font-inter py-[60px]">
             <div className="w-[80%] max-w-[1600px] flex mx-auto justify-between">
                 <div className="w-[60%] flex flex-col gap-4">
@@ -46,21 +46,21 @@ const About = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="flex mt-2 gap-2">
+                    {/* <div className="flex mt-2 gap-2">
                         <Link 
                             href="/" 
                             className="bg-[#9C37FD] rounded-full px-4 py-2 uppercase text-[16px] font-light flex justify-center items-center w-max cursor-pointer"
                         >
                             our team
                         </Link>
-                    </div>
+                    </div> */}
                 </div>
 
                 <div className="w-[50%] flex justify-end">
-                    <div className="absolute right-20">
+                    <div className="p-2 rounded-lg bg-black/30">
                         <Image 
-                            src={ladySitting}
-                            className="w-[500px]"
+                            src={team}
+                            className="w-[500px] rounded-lg"
                         />
                     </div>
                 </div>

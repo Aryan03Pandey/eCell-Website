@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/image"
 
 import pic1 from "../public/assets/images/gallery2/1.jpg"
 import pic2 from "../public/assets/images/gallery2/2.jpg"
@@ -32,7 +32,7 @@ export const ImageSection = ({ images, speed }) => {
 
 const Gallery = ({ images, speed }) => {
     return (
-        <section className="bg-[url('/assets/images/noise-2.png')] w-full bg-[length:120%] bg-center bg-no-repeat">
+        <section id="gallery" className="bg-[url('/assets/images/noise-2.png')] w-full bg-[length:120%] bg-center bg-no-repeat">
             <div className="font-inter py-[50px] pb-[150px] bg-[url('/assets/icons/milky-way.svg')] w-full bg-cover bg-center bg-no-repeat">
                 <div className=" flex flex-col mx-auto gap-12">
 
