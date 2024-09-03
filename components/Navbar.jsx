@@ -19,6 +19,11 @@ const navLinks = [
     {
         text: "Collaborations",
         link: "#collaborations"
+    },
+    {
+        text: "Login",
+        link: "/login"
+
     }
 ]
 
